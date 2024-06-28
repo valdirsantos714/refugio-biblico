@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import TelaInicial from './TelaInicial/TelaInicial.jsx'
+import Header from './componentsPadrao/Header/Header.jsx'
+import TelaBiblia from './TelaBiblia/TelaBiblia.jsx'
 
 const rotas = createBrowserRouter([
   {
     path: "/",
-    element: <TelaInicial/>
+    element: <Header/>,
+    children: [
+      {
+        path: "/",
+        element: <TelaInicial/>
+      },
+
+      {
+        path: "/biblia",
+        element: <TelaBiblia/>
+      }
+    ]
   }
 ])
 

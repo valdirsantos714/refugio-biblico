@@ -3,7 +3,7 @@
 export default function Vantagens() {
     return (
         <main>
-            <section>
+            <section className="text-black">
 
                 <div className="flex flex-col-reverse bg-yellow-400 lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
 
