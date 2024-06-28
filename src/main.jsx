@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Header from './Header/Header.jsx'
 import TelaInicial from './TelaInicial/TelaInicial.jsx'
 
 const rotas = createBrowserRouter([
