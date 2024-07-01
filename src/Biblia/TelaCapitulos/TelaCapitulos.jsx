@@ -33,7 +33,7 @@ export default function TelaCapitulos() {
 
         return capitulos.map((c) => (
             <Link key={c.id}
-            className="bg-green-600 rounded-[0.5rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/l/${c}`} >{c}</Link>
+            className="bg-green-600 rounded-[0.5rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/${params.idLivro}/${c}`} >{c}</Link>
         ))
     }
 

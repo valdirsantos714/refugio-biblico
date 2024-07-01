@@ -30,7 +30,7 @@ const rotas = createBrowserRouter([
       },
 
       {
-        path: "/biblia/livros/l/:idCapitulo",
+        path: "/biblia/livros/:idLivro/:idCapitulo",
         element: <TelaTextos/>
       }
 
