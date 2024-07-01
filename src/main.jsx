@@ -5,6 +5,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import TelaInicial from './TelaInicial/TelaInicial.jsx'
 import Header from './componentsPadrao/Header/Header.jsx'
 import TelaBiblia from './TelaBiblia/TelaBiblia.jsx'
+import TelaCapitulos from "./TelaBiblia/TelaCapitulos/TelaCapitulos.jsx"
 
 const rotas = createBrowserRouter([
   {
@@ -19,6 +20,11 @@ const rotas = createBrowserRouter([
       {
         path: "/biblia",
         element: <TelaBiblia/>
+      },
+
+      {
+        path: "/biblia/:id",
+        element: <TelaCapitulos/>
       }
     ]
   }

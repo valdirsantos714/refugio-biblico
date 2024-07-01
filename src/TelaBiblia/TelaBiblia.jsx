@@ -1,11 +1,9 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Footer from "../componentsPadrao/Footer/Footer"
 
 export default function TelaBiblia() {
-
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdHIiOiJGcmkgSnVuIDI4IDIwMjQgMTQ6Mzg6NTkgR01UKzAwMDAudmFsZGlyc2FudG9zdDQwQGdtYWlsLmNvbSIsImlhdCI6MTcxOTU4NTUzOX0.G8MZIUyE8o3wOOxkGyEpLAxH896o0R6-Inz3OFwvX88"
-
+    const params = useParams();
     const [livros, setLivros] = useState([])
 
     useEffect(() => {
@@ -16,18 +14,13 @@ export default function TelaBiblia() {
     const pegaLivros = async () => {
         try {
             
-            const resposta = await fetch("https://www.abibliadigital.com.br/api/books", {
-                method: "GET",
-                headers: {
-                    "Authorization": `Bearer ${token}`,
-                    "Accept": "application/json"
-                }
+            const resposta = await fetch("https://biblia-api.onrender.com/livros/all", {
+                method: "GET"
             })
 
             const l = await resposta.json()
 
-            const listaNomesLivros = l.map((l) => l.name)
-            setLivros(listaNomesLivros)
+            setLivros(l)
             console.log(livros);
 
 
@@ -36,9 +29,13 @@ export default function TelaBiblia() {
         }
     }
 
+    const livroEscolhido = livros.find((l) => {return l.id === params.id});
+//    console.log(livroEscolhido);
+
+
     const amostrarLivros = () => {
         return livros.map((l) => (
-            <Link className="text-[1.4rem] bg-green-700 text-white p-[0.7rem] rounded-[1rem] ">{l}</Link>
+            <Link key={l.id}  to={`/biblia/${l.id}`}  className="text-[1.4rem] bg-green-700 text-white p-[0.7rem] rounded-[1rem] ">{l.nome}</Link>
             
         ))
     }
