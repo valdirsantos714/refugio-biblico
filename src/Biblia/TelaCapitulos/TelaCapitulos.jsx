@@ -30,11 +30,21 @@ export default function TelaCapitulos() {
     }
 
     const amostrarCapitulos = () => {
-
-        return capitulos.map((c) => (
+        if (capitulos.length > 0) {
+            return capitulos.map((c) => (
             <Link key={c.id}
             className="bg-green-600 rounded-[0.5rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/${params.idLivro}/${c}`} >{c}</Link>
         ))
+
+        } else {
+            return (
+            <div className="flex justify-center flex-col items-center" >
+                <div className="w-[24px] h-[24px] p-[1rem] animate-spin border-[10px] border-blue-800  border-b-transparent bg-transparent rounded-[50%]">
+                </div>
+                <p className="pt-[1rem]">Carregando... Esse processo pode levar de 3 a 5 minutos</p>
+            </div>
+            )
+        }
     }
 
 

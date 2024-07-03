@@ -33,11 +33,21 @@ export default function TelaTextos() {
 
     const amostrarTextos = () => {
 
-
-        return textos.sort((l, v) => l.versiculo - v.versiculo).map((l) => (
+        if (textos.length > 0) {
+            return textos.sort((l, v) => l.versiculo - v.versiculo).map((l) => (
             <p key={l.id}
             className="rounded-[1rem] p-[1rem] lg:text-[1.6rem]"  >{l.versiculo} {l.texto}</p>
         ))
+ 
+        } else {
+            return (
+            <div className="flex justify-center flex-col items-center" >
+                <div className="w-[24px] h-[24px] p-[1rem] animate-spin border-[10px] border-blue-800  border-b-transparent bg-transparent rounded-[50%]">
+                </div>
+                <p className="pt-[1rem]">Carregando... Esse processo pode levar de 3 a 5 minutos</p>
+            </div>
+            )
+        }
     }
 
 

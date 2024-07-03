@@ -33,10 +33,20 @@ export default function TelaLivros() {
 
     const amostrarLivros = () => {
 
-        return livros.map((l) => (
-            <Link key={l.id}
-            className="bg-green-600 rounded-[1rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/${l.id}`}>{l.nome}</Link>
-        ))
+        if (livros.length > 0) {
+            return livros.map((l) => (
+                <Link key={l.id}
+                className="bg-green-600 rounded-[1rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/${l.id}`}>{l.nome}</Link>
+            ))
+        } else {
+            return (
+            <div className="flex justify-center flex-col items-center" >
+                <div className="w-[24px] h-[24px] p-[1rem] animate-spin border-[10px] border-blue-800  border-b-transparent bg-transparent rounded-[50%]">
+                </div>
+                <p className="pt-[1rem]">Carregando... Esse processo pode levar de 3 a 5 minutos</p>
+            </div>
+            )
+        }
     }
 
     return (
