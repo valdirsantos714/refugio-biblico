@@ -10,7 +10,7 @@ export default function Banner() {
                 
                 <div className="flex flex-col text-[1.3rem] gap-[0.5rem] lg:text-[1.5rem] justify-center items-center">
                     <Link to={"/biblia/livros"} className="bg-green-600 rounded-[0.4rem] p-[0.4rem] lg:w-2/5 rounded-[1rem]">Ler a Bíblia</Link>
-                    <Link className="bg-green-600 rounded-[1rem] lg:w-2/5">Tirar suas dúvidas bíblicas</Link>
+                    <Link to={"duvidas/tiraduvidas"} className="bg-green-600 rounded-[1rem] lg:w-2/5">Tirar suas dúvidas bíblicas</Link>
                 </div>
 
             </div>

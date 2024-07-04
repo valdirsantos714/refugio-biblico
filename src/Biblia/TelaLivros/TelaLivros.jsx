@@ -51,7 +51,7 @@ export default function TelaLivros() {
 
     return (
         <>
-            <section className="h-auto bg-white text-black">
+            <section className="h-auto min-h-[65vh] bg-white text-black">
                 <div className="p-[1rem] text-center">
                     <h2 className="text-[2rem] lg:text-[2.2rem]">Livros da Bíblia</h2>
                     <div className="text-[1.4rem] flex flex-col justify-center items-center gap-[0.5rem]  p-[0.4rem] lg:flex-row flex-wrap">
