@@ -3,9 +3,9 @@
 export default function Vantagens() {
     return (
         <main>
-            <section className="text-black">
+            <section className="text-black" id="vantagens">
 
-                <div className="flex flex-col-reverse bg-yellow-400 lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
+                <div className="flex flex-col-reverse bg-cores-azul text-cores-branco lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
 
                     <div className=" text-center  lg:text-center ">
                         <h2 className="text-[1.5rem] lg:text-[1.7rem] pb-[0.4rem]">Você tem dúvidas sobre a Bíblia? </h2>
@@ -15,7 +15,7 @@ export default function Vantagens() {
                     <img src="/duvidas.jpg" alt="Homem com dúvidas" className="lg:w-2/5 "/>
                 </div>
 
-                <div  className="flex flex-col-reverse bg-green-400 lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
+                <div  className="flex flex-col-reverse bg-cores-azul_fraco text-cores-azul lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
 
                     <div className=" text-center  lg:text-center ">
                         <h2 className="text-[1.5rem] lg:text-[1.7rem] pb-[0.4rem]">Conecte-se com Deus agora mesmo!</h2>
@@ -26,7 +26,7 @@ export default function Vantagens() {
                 </div>
 
 
-                <div className="flex flex-col-reverse bg-blue-400 lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
+                <div className="flex flex-col-reverse bg-cores-branco text-cores-azul lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
 
                     <div className=" text-center  lg:text-center ">
                         <h2 className="text-[1.5rem] lg:text-[1.7rem] pb-[0.4rem]">Ajunte tesouros não na terra mas sim no céu!</h2>
@@ -37,7 +37,7 @@ export default function Vantagens() {
                 </div>
 
 
-                <div className="flex flex-col-reverse bg-slate-300 lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
+                <div className="flex flex-col-reverse bg-cores-azul text-cores-branco lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center">
 
                     <div className=" text-center  lg:text-center ">
                         <h2 className="text-[1.5rem] lg:text-[1.7rem] pb-[0.4rem]">Seja uma pessoa mais feliz hoje mesmo!</h2>
