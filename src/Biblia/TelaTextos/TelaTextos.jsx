@@ -36,7 +36,7 @@ export default function TelaTextos() {
         if (textos.length > 0) {
             return textos.sort((l, v) => l.versiculo - v.versiculo).map((l) => (
             <p key={l.id}
-            className="rounded-[1rem] p-[1rem] lg:text-[1.6rem]"  >{l.versiculo} {l.texto}</p>
+            className="w-[100%] text-cores-branco rounded-[1rem] p-[1rem] lg:text-[1.6rem] 2xl:w-[50%] 2xl:text-[1.8rem] "  >{l.versiculo} {l.texto}</p>
         ))
  
         } else {
@@ -54,10 +54,10 @@ export default function TelaTextos() {
 
     return (
         <>
-            <section className="h-auto bg-white text-black">
+            <section className="h-auto  bg-cores-azul text-cores-branco">
                 <div className="p-[1rem] text-center">
                     <h2 className="text-[2rem] lg:text-[2.2rem]">Versículos</h2>
-                    <div className="text-[1.4rem] flex flex-row flex-wrap justify-center items-center gap-[0.5rem] min-h-[52vh]  p-[0.4rem] lg:flex-row">
+                    <div className=" w-[100%] text-[1.4rem] flex flex-row flex-wrap justify-center items-center gap-[0.5rem] min-h-[52vh]  p-[0.4rem] lg:flex-row ">
                         {amostrarTextos()}
                     </div>
                 </div>

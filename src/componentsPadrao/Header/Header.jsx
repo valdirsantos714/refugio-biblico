@@ -1,10 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
-
+import "./Header.css"
 
 export default function Header() {
     return (
         <header className="bg-cores-azul text-cores-branco">
-            <div className="flex text-2xl lg: p-5 justify-between items-center text-center">
+            
+                <div className="flex text-2xl lg: p-5 justify-between items-center text-center">
 
                 <div className=" flex m-auto">
                     <Link className=" text-3xl" to={"/"}>Refúgio Bíblico</Link>
@@ -19,8 +20,10 @@ export default function Header() {
                 </div>
             </div>
 
+
             <Outlet/>
             
+
         </header>
     )
 }
