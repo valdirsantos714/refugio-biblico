@@ -1,14 +1,8 @@
-#amostrar-lista-header:checked~#lista {
+#amostrar-lista-header:checked ~ #lista {
     display: flex;
-    position: relative;
-    top: 200%;
-    left: 0;
-}
-
-header {
-    left: 0;
-    top: 0;
     position: absolute;
+    top: 100%;
+    left: 0%;
 }
 
 #lista {

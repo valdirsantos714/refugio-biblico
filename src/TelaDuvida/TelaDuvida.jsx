@@ -63,17 +63,17 @@ export default function TelaDuvida() {
     return (
         <>
         <main>
-            <section className="min-h-[65vh] ">
+            <section className="min-h-[65vh] animate-[aparecer_1s_linear] ">
                 <div className="w-[100%] min-h-[60vh] h-auto p-[0.5rem] bg-cores-azul text-cores-branco flex flex-col flex-wrap justify-center items-center">
-                <h2 className="text-[2rem] p-[1rem]">Tira Dúvidas</h2>
-                <p className="text-[1.2rem] text-center w-[90%] pb-[1rem]">Tire todas as suas dúvidas sobre a Bíblia</p>
-                <p className="text-[1.3rem] pb-[0.5rem] text-cores-azul_fraco">{dados}</p>
+                <h2 className="text-[2rem] p-[1rem] 2xl:text-[2.7rem]">Tira Dúvidas</h2>
+                <p className="text-[1.2rem] text-center w-[90%] pb-[1rem] 2xl:text-[2rem]">Tire todas as suas dúvidas sobre a Bíblia</p>
+                <p className="text-[1.3rem] text-center w-[90%] pb-[0.5rem] text-cores-azul_fraco lg:text-[1.5rem] lg:w-[70%] lg:text-center 2xl:text-[1.8rem] 2xl:w-[70%] animate-[aparecer_1s_linear]">{dados}</p>
 
-                <textarea id="input-duvida" className="text-cores-branco mt-[1rem] w-[100%] h-[10vh] p-[0.5rem] text-[1.3rem] border-[0.1rem] border-cores-branco bg-cores-azul" placeholder="Digite sua Dúvida" value={input} onChange={pegaDadosInput}></textarea>
+                <textarea id="input-duvida" className="text-cores-branco mt-[1rem] w-[100%] h-[10vh] p-[0.5rem] text-[1.3rem] border-[0.1rem] border-cores-branco bg-cores-azul lg:w-[70%] 2xl:w-[50%] 2xl:text-[1.7rem]" placeholder="Digite sua Dúvida" value={input} onChange={pegaDadosInput}></textarea>
 
                 <div className="flex flex-row   w-[80%] justify-center items-center gap-[1rem]">
-                <button className="bg-cores-azul_fraco p-[1.1rem] mt-[1rem] rounded-[1rem] text-[1.5rem] text-cores-azul" onClick={amostrarDados}>Enviar</button>
-                <button className="bg-cores-azul_fraco text-cores-azul p-[0.3rem] mt-[1rem] rounded-[1rem] text-[1.3rem]" onClick={limpaResposta}>Limpar Resposta</button>
+                <button className="bg-cores-azul_fraco p-[1.1rem] mt-[1rem] rounded-[1rem] text-[1.5rem] text-cores-azul hover:cursor-pointer hover:opacity-[90%]" onClick={amostrarDados}>Enviar</button>
+                <button className="bg-cores-azul_fraco text-cores-azul p-[0.3rem] mt-[1rem] rounded-[1rem] text-[1.3rem] lg:p-[1.2rem] lg:text-[1.5rem] hover:cursor-pointer hover:opacity-[90%]" onClick={limpaResposta}>Limpar Resposta</button>
 
                 </div>
                 </div>

@@ -3,11 +3,11 @@
 export default function Vantagens() {
     return (
         <main>
-            <section id="vantagens" className="">
+            <section id="vantagens" className="animate-[aparecer_1s_linear]">
                 {/*Container */}
-                <div className="2xl:flex 2xl:flex-row 2xl:gap-[1rem]  2xl:flex 2xl:justify-center 2xl:items-center 2xl:w-[100%]">
+                <div className="2xl:flex 2xl:flex-row 2xl:gap-[1rem]  2xl:justify-center 2xl:items-center 2xl:w-[100%]">
 
-                <div className="flex flex-col-reverse bg-cores-azul text-cores-branco lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center 2xl:flex-col-reverse 2xl:w-[100%]">
+                <div className="flex flex-col-reverse bg-cores-azul text-cores-branco lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center 2xl:flex-col-reverse 2xl:w-[100%] 2xl:border-[1px] 2xl:border-cores-azul_fraco">
 
                     <div className=" text-center  lg:text-center ">
                         <h2 className="text-[1.5rem] lg:text-[1.7rem] pb-[0.4rem]">Você tem dúvidas sobre a Bíblia? </h2>
@@ -28,9 +28,9 @@ export default function Vantagens() {
                 </div>
                 </div>
 
-                <div className="2xl:flex 2xl:flex-row 2xl:gap-[1rem]  2xl:flex 2xl:justify-center 2xl:items-center 2xl:w-[100%]">
+                <div className="2xl:flex 2xl:flex-row 2xl:gap-[1rem] 2xl:justify-center 2xl:items-center 2xl:w-[100%]">
 
-                <div className="flex flex-col-reverse bg-cores-branco text-cores-azul lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center 2xl:flex-col-reverse 2xl:w-[100%]">
+                <div className="flex flex-col-reverse bg-cores-azul 2xl:border-[1px] 2xl:border-cores-azul_fraco text-cores-branco lg:flex-row p-[1.4rem] gap-[1.4rem] justify-center items-center 2xl:flex-col-reverse 2xl:w-[100%]">
 
                     <div className=" text-center  lg:text-center ">
                         <h2 className="text-[1.5rem] lg:text-[1.7rem] pb-[0.4rem]">Ajunte tesouros não na terra mas sim no céu!</h2>

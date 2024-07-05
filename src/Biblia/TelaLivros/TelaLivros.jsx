@@ -36,7 +36,7 @@ export default function TelaLivros() {
         if (livros.length > 0) {
             return livros.map((l) => (
                 <Link key={l.id}
-                className="bg-cores-azul_medio text-cores-branco rounded-[1rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/${l.id}`}>{l.nome}</Link>
+                className="bg-cores-azul_medio text-cores-branco rounded-[1rem] p-[1rem] lg:text-[1.6rem] animate-[aparecer_1s_linear]"  to={`/biblia/livros/${l.id}`}>{l.nome}</Link>
             ))
         } else {
             return (
@@ -53,7 +53,7 @@ export default function TelaLivros() {
         <>
             <section className="h-auto min-h-[65vh] bg-cores-azul text-cores-branco">
                 <div className="p-[1rem] text-center">
-                    <h2 className="text-[2rem] lg:text-[2.2rem]">Livros da Bíblia</h2>
+                    <h2 className="text-[2rem] lg:text-[2.2rem] animate-[aparecer_1s_linear]">Livros da Bíblia</h2>
                     <div className="text-[1.4rem] flex flex-col justify-center items-center gap-[0.5rem]  p-[0.4rem] lg:flex-row flex-wrap">
                         {amostrarLivros()}
                     </div>

@@ -33,7 +33,7 @@ export default function TelaCapitulos() {
         if (capitulos.length > 0) {
             return capitulos.map((c) => (
             <Link key={c.id}
-            className="bg-cores-azul_medio text-cores-branco rounded-[0.5rem] p-[1rem] lg:text-[1.6rem]"  to={`/biblia/livros/${params.idLivro}/${c}`} >{c}</Link>
+            className="bg-cores-azul_medio text-cores-branco rounded-[0.5rem] p-[1rem] lg:text-[1.6rem] animate-[aparecer_1s_linear]"  to={`/biblia/livros/${params.idLivro}/${c}`} >{c}</Link>
         ))
 
         } else {
@@ -53,9 +53,9 @@ export default function TelaCapitulos() {
         <>
             <section className="h-auto  bg-cores-azul text-cores-branco">
                 <div className="p-[1rem] text-center">
-                    <h2 className="text-[2rem] lg:text-[2.2rem]">Capítulos</h2>
+                    <h2 className="text-[2rem] lg:text-[2.2rem] animate-[aparecer_1s_linear]">Capítulos</h2>
                     <div className="lg:w-[50%] 2xl:w-[50%] flex flex-row flex-wrap justify-center items-center m-auto">
-                        <div className="text-[1.4rem] flex flex-row flex-wrap justify-center items-center gap-[0.5rem] min-h-[52vh]  p-[0.4rem] lg:flex-row ">
+                        <div className="text-[1.4rem] flex flex-row flex-wrap justify-center items-center gap-[0.5rem] min-h-[55vh]  p-[0.4rem] lg:flex-row ">
                             {amostrarCapitulos()}
                         </div>
                     </div>
