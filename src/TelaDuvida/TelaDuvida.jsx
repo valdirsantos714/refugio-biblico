@@ -8,7 +8,7 @@ export default function TelaDuvida() {
     const [dados, setDados] = useState([])
     const [input, setInput] = useState("")
 
-    const cliente = new GoogleGenerativeAI("AIzaSyAQyyvt5WFVP5ku2h2QaAYjkLM8DiAAd5A")
+    const cliente = new GoogleGenerativeAI("SUA_API_KEY")
 
     const pegaDados = async () => {
         try {
