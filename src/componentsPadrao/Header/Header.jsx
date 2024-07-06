@@ -15,7 +15,6 @@ export default function Header() {
                 <nav className="hidden  lg:flex gap-6 animate-[aparecer_300ms_linear]">
                     <Link className="hover:cursor-pointer hover:opacity-[90%]" to={"/biblia/livros"}>Ler a Bíblia</Link>
                     <Link className="hover:cursor-pointer hover:opacity-[90%]" to={"duvidas/tiraduvidas"}>Tirar dúvidas</Link>
-                    <Link className="hover:cursor-pointer hover:opacity-[90%]" href="#vantagens">Vantagens</Link>
                 </nav>
                 </div>
             </div>
@@ -30,7 +29,6 @@ export default function Header() {
                     <Link to={"/"}>Ir para o início</Link>
                     <Link to={"/biblia/livros"}>Ler a Bíblia</Link>
                     <Link to={"duvidas/tiraduvidas"}>Tirar dúvidas</Link>
-                    <Link to={"/#vantagens"}>Vantagens</Link>
                 </nav>
             </div>
 
