@@ -60,6 +60,8 @@ export default function TelaDuvida() {
 
     const limpaResposta = () => {
         setDados([])
+        setDuvida("")
+        setInput("")
     }
 
     return (
@@ -81,7 +83,7 @@ export default function TelaDuvida() {
 
                 <div className="flex flex-row   w-[80%] justify-center items-center gap-[1rem]">
                 <button className="bg-cores-azul_fraco p-[1.1rem] mt-[1rem] rounded-[1rem] text-[1.5rem] text-cores-azul hover:cursor-pointer hover:opacity-[90%]" onClick={amostrarDados}>Enviar</button>
-                <button className="bg-cores-azul_fraco text-cores-azul p-[0.3rem] mt-[1rem] rounded-[1rem] text-[1.3rem] lg:p-[1.2rem] lg:text-[1.5rem] hover:cursor-pointer hover:opacity-[90%]" onClick={limpaResposta}>Limpar Resposta</button>
+                <button className="bg-cores-azul_fraco text-cores-azul p-[0.3rem] mt-[1rem] rounded-[1rem] text-[1.3rem] lg:p-[1.2rem] lg:text-[1.5rem] hover:cursor-pointer hover:opacity-[90%]" onClick={limpaResposta}>Limpar</button>
 
                 </div>
                 </div>
