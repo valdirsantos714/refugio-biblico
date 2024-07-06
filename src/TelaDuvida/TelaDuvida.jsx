@@ -71,9 +71,10 @@ export default function TelaDuvida() {
 
                 <p className="text-[1.2rem] text-center w-[90%] pb-[1rem] 2xl:text-[2rem]">Tire todas as suas dúvidas sobre a Bíblia</p>
 
-                <div className="border-[1px] border-cores-azul_fraco w-full p-[0.4rem] flex flex-col">
-                    <div className="ml-auto max-w-[70%] bg-cores-preto p-[0.3rem] text-center rounded-[0.8rem]">Dúvida: {duvida}</div>
-                    <div className="mt-[0.7rem] mr-auto max-w-[70%]  bg-cores-azul_medio/[30%] text-cores-branco p-[0.3rem] text-center rounded-[0.8rem]">Resposta: {dados}</div>
+                <div className="border-[1px] border-cores-azul_fraco w-full p-[0.4rem] flex flex-col lg:w-[75%] 2xl:w-[70%]">
+                    <div className="ml-auto max-w-[70%] bg-cores-preto p-[0.3rem] text-center rounded-[0.8rem]
+                    text-[1.2rem] lg:text-[1.3rem] 2xl:text-[1.6rem]">Dúvida: {duvida}</div>
+                    <div className="mt-[0.7rem] mr-auto max-w-[70%]  bg-cores-azul_medio/[30%] text-cores-branco p-[0.3rem] text-center rounded-[0.8rem] text-[1.2rem] lg:text-[1.3rem] lg:max-w-[85%] 2xl:text-[1.6rem]">Resposta: {dados}</div>
                 </div>
 
                 <textarea id="input-duvida" className="text-cores-branco mt-[1rem] w-[100%] h-[10vh] p-[0.5rem] text-[1.3rem] border-[0.1rem] border-cores-branco bg-cores-azul lg:w-[70%] 2xl:w-[50%] 2xl:text-[1.7rem]" placeholder="Digite sua Dúvida" value={input} onChange={pegaDadosInput}></textarea>

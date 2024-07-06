@@ -23,7 +23,7 @@ export default function Header() {
             <div className="flex lg:hidden pl-[0.4rem]">
                 <input type="checkbox" id="amostrar-lista-header" />
                 <label htmlFor="amostrar-lista-header">
-                    <span className="bg-[url('/barras.svg')] flex w-[25px] h-[25px]"></span>
+                    <span className="bg-[url('/barras.svg')] flex w-[25px] h-[25px] bg-no-repeat bg-cover bg-center"></span>
                 </label>
                 <nav className="hidden bg-cores-azul_medio flex-col p-[1rem] text-[1.3rem] gap-[0.3rem] animate-[aparecer_300ms_linear]" id="lista">
                     <Link to={"/"}>Ir para o início</Link>
