@@ -4,7 +4,7 @@ export default function Banner() {
     return (
         <section className="text-cores-preto bg-[url('/banner_biblia.jpg')] bg-no-repeat bg-center bg-cover h-[90vh] flex justify-center items-center ">
 
-            <div className=" bg-blue-300/60 w-4/5 h-[60vh] p-4 text-center  rounded-[1rem] lg:w-[90%] 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center">
+            <div className=" bg-blue-300/60 w-4/5 h-[auto] p-4 text-center  rounded-[1rem] lg:w-[90%] 2xl:flex 2xl:flex-col 2xl:justify-center 2xl:items-center 2xl:w-[70%]">
                 <h2 className="text-3xl pb-[0.5rem] lg:text-[2.5rem] 2xl:text-[3rem] animate-[aparecer_1s_linear]">Busque refúgio no Senhor!</h2>
                 <p className="text-[1.2rem] pb-[0.7rem] lg:text-[1.7rem] 2xl:text-[2.2rem] 2xl:w-[70%] 2xl:p-[1rem] animate-[aparecer_1.2s_linear]">Se refugie em Deus através da Bíblia! Ou se preferir tire suas dúvidas bíblicas agora mesmo!</p>
                 
