@@ -17,7 +17,7 @@ export default function TelaLivros() {
     const pegaLivros = async () => {
         try {
             
-            const response = await fetch("https://biblia-api.onrender.com/livros/all", {
+            const response = await fetch("https://biblia-api-production-2063.up.railway.app/livros/all", {
                 method: "GET"
             })
             

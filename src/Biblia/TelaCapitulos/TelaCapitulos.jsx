@@ -15,7 +15,7 @@ export default function TelaCapitulos() {
     const pegaCapitulos = async () => {
         try {
             
-            const response = await fetch(`https://biblia-api.onrender.com/livros/${params.idLivro}`, {
+            const response = await fetch(`https://biblia-api-production-2063.up.railway.app/livros/${params.idLivro}`, {
                 method: "GET"
             })
             
